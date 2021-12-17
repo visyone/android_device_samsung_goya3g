@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/goyawifi
+LOCAL_PATH := device/samsung/goya3g
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/goyawifi/goyawifi-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/goya3g/goya3g-vendor.mk)
 
 # Inherit from goya-common
 $(call inherit-product, device/samsung/goya-common/goya.mk)

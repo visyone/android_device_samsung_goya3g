@@ -13,31 +13,31 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := goyawifi
+PRODUCT_RELEASE_NAME := goya3g
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1024
 TARGET_SCREEN_WIDTH := 600
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/goyawifi/device.mk)
+$(call inherit-product, device/samsung/goya3g/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := goyawifi
-PRODUCT_NAME := cm_goyawifi
+PRODUCT_DEVICE := goya3g
+PRODUCT_NAME := cm_goya3g
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SM-T110
+PRODUCT_MODEL := SM-T111
 PRODUCT_MANUFACTURER := samsung
 
 #Set build fingerprint / ID / Prduct Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=goyawifi \
-    TARGET_DEVICE=goyawifi \
-    PRIVATE_BUILD_DESC="goyawifi-user 4.4.4 JDQ39 T110NXXUAOC1 release-keys" \
-    BUILD_FINGERPRINT="samsung/goyawifi/goyawifi:4.4.4/JDQ39/T110NXXUAOC1:user/release-keys"
+    PRODUCT_NAME=goya3g \
+    TARGET_DEVICE=goya3g \
+    PRIVATE_BUILD_DESC="goya3g-user 4.4.4 JDQ39 T111XXUANAB release-keys" \
+    BUILD_FINGERPRINT="samsung/goya3g/goya3g:4.4.4/JDQ39/T111XXUANAB:user/release-keys"

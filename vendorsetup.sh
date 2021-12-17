@@ -20,7 +20,7 @@
 # function: add_lunch_combo generic-eng
 
 PRODUCT="cm"
-DEVICE="goyawifi"
+DEVICE="goya3g"
 
 for i in eng user userdebug; do
 add_lunch_combo ${PRODUCT}_${device}-${i};
