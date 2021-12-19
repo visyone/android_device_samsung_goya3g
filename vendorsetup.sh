@@ -23,5 +23,5 @@ PRODUCT="cm"
 DEVICE="goya3g"
 
 for i in eng user userdebug; do
-add_lunch_combo ${PRODUCT}_${device}-${i};
+add_lunch_combo ${PRODUCT}_${DEVICE}-${i};
 done
