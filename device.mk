@@ -16,8 +16,5 @@
 
 LOCAL_PATH := device/samsung/goya3g
 
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/goya/goya-vendor.mk)
-
 # Inherit from goya-common
 $(call inherit-product, device/samsung/goya-common/goya.mk)
